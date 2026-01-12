@@ -3,271 +3,844 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Professional Psixologik Yordam</title>
-    <link rel="stylesheet" href="./style.css" />
+    <title>Jadida Xusniddinovna | Psixologik Yordam</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg-dark: #1e120c;
+        --accent: #c9b896;
+        --text-light: #f5f1de;
+        --card-bg: rgba(245, 241, 222, 0.05);
+        --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: var(--bg-dark);
+        color: var(--text-light);
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* Background Graphics */
+      .bg-glow {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(
+          circle at 50% -20%,
+          #3d2416 0%,
+          transparent 70%
+        );
+        z-index: -1;
+      }
+
+      /* Hero Section */
+      .hero {
+        padding: 60px 0 40px;
+        text-align: left;
+      }
+      .hero h1 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 15px;
+      }
+      .hero h1 span {
+        color: var(--accent);
+      }
+      .hero p {
+        opacity: 0.8;
+        font-size: 16px;
+        margin-bottom: 25px;
+      }
+
+      .expert-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: var(--card-bg);
+        padding: 15px;
+        border-radius: 20px;
+        border: 1px solid rgba(201, 184, 150, 0.2);
+      }
+      .expert-info h4 {
+        color: var(--accent);
+        font-size: 18px;
+      }
+
+      .btn-main {
+        display: block;
+        width: 100%;
+        background: var(--accent);
+        color: var(--bg-dark);
+        text-align: center;
+        padding: 18px;
+        border-radius: 15px;
+        text-decoration: none;
+        font-weight: 700;
+        margin-top: 20px;
+        font-size: 18px;
+        transition: var(--transition);
+        border: none;
+        cursor: pointer;
+        font-family: inherit;
+      }
+      .btn-main:active {
+        transform: scale(0.98);
+      }
+
+      /* Action Buttons */
+      .action-buttons {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+      }
+      
+      .btn-telegram, .btn-form {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 16px 12px;
+        border-radius: 15px;
+        font-weight: 700;
+        font-size: 16px;
+        transition: var(--transition);
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        font-family: inherit;
+      }
+      
+      .btn-telegram {
+        background: linear-gradient(135deg, #0088cc 0%, #0077b5 100%);
+        color: white;
+      }
+      
+      .btn-form {
+        background: var(--accent);
+        color: var(--bg-dark);
+      }
+      
+      .btn-telegram:hover, .btn-form:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+      
+      .btn-telegram:active, .btn-form:active {
+        transform: scale(0.98);
+      }
+
+      /* Story Section (Rasm bo'yicha sariq ramka) */
+      .story-container {
+        border: 2px solid var(--accent);
+        border-radius: 25px;
+        padding: 25px;
+        margin: 30px 0;
+        background: rgba(201, 184, 150, 0.05);
+      }
+      .story-container h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+        color: var(--accent);
+      }
+      .story-text {
+        font-style: italic;
+        font-size: 15px;
+        color: rgba(245, 241, 222, 0.9);
+      }
+
+      /* Biz nima qilamiz? Grid (Rasm bo'yicha 1, 2, 3, 4 bloklar) */
+      .section-header {
+        margin: 40px 0 20px;
+        font-size: 28px;
+        font-weight: 700;
+      }
+
+      .steps-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      .step-item {
+        background: var(--card-bg);
+        padding: 25px;
+        border-radius: 20px;
+        border-left: 5px solid var(--accent);
+        position: relative;
+      }
+      .step-num {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        font-size: 60px;
+        font-weight: 800;
+        opacity: 0.1;
+        color: var(--accent);
+      }
+      .step-item h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: var(--accent);
+        width: 85%;
+      }
+      .result-tag {
+        display: inline-block;
+        background: rgba(76, 175, 80, 0.2);
+        color: #81c784;
+        padding: 4px 12px;
+        border-radius: 8px;
+        font-size: 13px;
+        margin-top: 10px;
+      }
+      /* Accordion Section */
+      .faq-item {
+        background: var(--card-bg);
+        margin-bottom: 10px;
+        border-radius: 15px;
+        overflow: hidden;
+      }
+      .faq-header {
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+      }
+      .faq-header h4 {
+        font-size: 15px;
+        font-weight: 600;
+        padding-right: 10px;
+      }
+      .faq-body {
+        padding: 0 20px;
+        max-height: 0;
+        overflow: hidden;
+        transition: var(--transition);
+        opacity: 0;
+      }
+      .faq-item.active .faq-body {
+        padding-bottom: 20px;
+        max-height: 200px;
+        opacity: 1;
+      }
+      .faq-icon {
+        transition: var(--transition);
+        font-size: 20px;
+        color: var(--accent);
+      }
+      .faq-item.active .faq-icon {
+        transform: rotate(45deg);
+      }
+
+      /* Bonus Section (Rasm bo'yicha qora blok ichida) */
+      .bonus-section {
+        background: #150c08;
+        padding: 40px 20px;
+        border-radius: 30px;
+        margin: 40px -20px;
+        text-align: center;
+        border: 1px solid rgba(201, 184, 150, 0.1);
+      }
+      .bonus-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 30px;
+      }
+      .bonus-card {
+        background: #2d1810;
+        border: 1px solid var(--accent);
+        padding: 20px;
+        border-radius: 20px;
+        position: relative;
+        text-align: left;
+      }
+      .bonus-label {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: var(--accent);
+        color: var(--bg-dark);
+        font-size: 10px;
+        font-weight: 800;
+        padding: 3px 10px;
+        border-radius: 5px;
+      }
+
+      /* Guarantee Box */
+      .guarantee-box {
+        background: rgba(244, 67, 54, 0.1);
+        border: 1px dashed #f44336;
+        padding: 20px;
+        border-radius: 20px;
+        margin-top: 30px;
+        text-align: center;
+      }
+
+      /* Scroll Animation */
+      .reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: 0.6s ease-out;
+      }
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Contact Form Styles */
+      .contact-form-wrapper {
+        margin-top: 40px;
+        background: linear-gradient(135deg, #f5f1de 0%, #e8dcc0 100%);
+        border-radius: 30px;
+        padding: 40px 20px;
+        color: #1e120c;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .contact-form-wrapper::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(
+          90deg,
+          var(--accent),
+          #d4c4a0,
+          var(--accent)
+        );
+      }
+
+      .form-header {
+        text-align: center;
+        margin-bottom: 35px;
+      }
+
+      .form-header h2 {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: #1e120c;
+      }
+
+      .form-header p {
+        font-size: 16px;
+        opacity: 0.7;
+        color: #1e120c;
+      }
+
+      .contact-form {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      .input-group {
+        margin-bottom: 25px;
+        position: relative;
+      }
+
+      .input-group label {
+        display: block;
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        color: #1e120c;
+      }
+
+      .input-group input,
+      .input-group textarea {
+        width: 100%;
+        padding: 18px 20px;
+        border-radius: 15px;
+        border: 2px solid rgba(30, 18, 12, 0.2);
+        background: rgba(255, 255, 255, 0.5);
+        font-size: 16px;
+        color: #1e120c;
+        transition: all 0.3s ease;
+        font-family: inherit;
+      }
+
+      .input-group input:focus,
+      .input-group textarea:focus {
+        outline: none;
+        border-color: var(--accent);
+        background: rgba(255, 255, 255, 0.8);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(201, 184, 150, 0.3);
+      }
+
+      .input-group textarea {
+        resize: vertical;
+        min-height: 80px;
+      }
+
+      .phone-input {
+        display: flex;
+        align-items: center;
+        border: 2px solid rgba(30, 18, 12, 0.2);
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.5);
+        transition: all 0.3s ease;
+        overflow: hidden;
+      }
+
+      .phone-input:focus-within {
+        border-color: var(--accent);
+        background: rgba(255, 255, 255, 0.8);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(201, 184, 150, 0.3);
+      }
+
+      .country-code {
+        display: flex;
+        align-items: center;
+        padding: 18px 15px;
+        border-right: 1px solid rgba(30, 18, 12, 0.1);
+        background: rgba(30, 18, 12, 0.05);
+      }
+
+      .country-code img {
+        width: 20px;
+        margin-right: 8px;
+        border-radius: 2px;
+      }
+
+      .country-code span {
+        font-size: 16px;
+        font-weight: 600;
+        color: #1e120c;
+      }
+
+      .phone-input input {
+        border: none;
+        background: transparent;
+        padding: 18px 15px;
+        margin: 0;
+      }
+
+      .phone-input input:focus {
+        transform: none;
+        box-shadow: none;
+      }
+
+      .submit-btn {
+        width: 100%;
+        background: linear-gradient(135deg, #1e120c 0%, #2d1f16 100%);
+        color: #f5f1de;
+        border: none;
+        padding: 20px;
+        border-radius: 15px;
+        font-size: 18px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 15px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .submit-btn::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.2),
+          transparent
+        );
+        transition: left 0.5s;
+      }
+
+      .submit-btn:hover::before {
+        left: 100%;
+      }
+
+      .submit-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 35px rgba(30, 18, 12, 0.4);
+      }
+
+      .submit-btn:active {
+        transform: translateY(-1px);
+      }
+
+      .submit-btn svg {
+        transition: transform 0.3s ease;
+      }
+
+      .submit-btn:hover svg {
+        transform: translateX(5px);
+      }
+
+      .privacy-note {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        font-size: 14px;
+        color: rgba(30, 18, 12, 0.6);
+        text-align: center;
+        margin: 0;
+      }
+
+      .privacy-note svg {
+        color: var(--accent);
+      }
+
+      /* Telegram Contact Button */
+      .telegram-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        background: linear-gradient(135deg, #0088cc 0%, #0077b5 100%);
+        color: white;
+        text-decoration: none;
+        padding: 18px 35px;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: 700;
+        transition: all 0.3s ease;
+        box-shadow: 0 8px 25px rgba(0, 136, 204, 0.3);
+      }
+
+      .telegram-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 35px rgba(0, 136, 204, 0.4);
+        background: linear-gradient(135deg, #0099dd 0%, #0088cc 100%);
+      }
+
+      .telegram-btn:active {
+        transform: translateY(-1px);
+      }
+
+      .telegram-btn svg {
+        transition: transform 0.3s ease;
+      }
+
+      .telegram-btn:hover svg {
+        transform: scale(1.1);
+      }
+
+      footer {
+        text-align: center;
+        padding: 40px 0;
+        opacity: 0.5;
+        font-size: 12px;
+      }
+
+      @media (min-width: 501px) {
+        .steps-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    </style>
   </head>
   <body>
-    <!-- Background Overlays -->
-    <div class="bg-overlay">
-      <div class="radial-1"></div>
-      <div class="radial-2"></div>
+    <div class="bg-glow"></div>
+
+    <div class="container">
+      <header class="hero">
+        <h1>Sovuqlaishib ketgan <span>munosabatlarni</span> qayta tiklash</h1>
+        <p>
+          Oilangizni saqlash va yana qadrli insonga aylanish uchun professional
+          yechim.
+        </p>
+
+        <div class="expert-card">
+          <div class="expert-info">
+            <h4>Jadida Xusniddinovna</h4>
+            <p style="font-size: 12px; margin: 0">Professional Psixolog</p>
+          </div>
+          <div style="font-size: 10px; text-align: right; opacity: 0.7">
+            Maxfiylik 100%<br />kafolatlanadi
+          </div>
+        </div>
+
+        <button onclick="scrollToTelegram()" class="btn-main"
+          >Bepul maslahat olish</button
+        >
+      </header>
+
+      <section class="story-container reveal">
+        <h2>Nega bunday bo'ldi?</h2>
+        <div class="story-text">
+          <p>
+            "Тонгда соат бешларда уйғониб кетдим. Ёнимда эримни нафас олишини
+            эшитябман. Илгари бу овоз хурсандчилик олиб келарди, ҳозир фақат
+            алам..."
+          </p>
+          <br />
+          <p>
+            "Мана 10 йил бирга ўтдик, лекин орамизда катта жарлик пайдо
+            бўлгандек. Биз энди фақат бир том остидаги қўшниларга айландик."
+          </p>
+        </div>
+      </section>
+      <h2 class="section-header reveal">Biz nima qilamiz?</h2>
+      <div class="steps-grid">
+        <div class="step-item reveal">
+          <span class="step-num">1</span>
+          <h3>Энг оғриқли хафагарчиликни аниқлаш</h3>
+          <p style="font-size: 14px; opacity: 0.8">
+            Кўп йиллик аламларнинг асосий "триггери"ни топамиз.
+          </p>
+          <span class="result-tag">Натижа: Енгиллик</span>
+        </div>
+
+        <div class="step-item reveal">
+          <span class="step-num">2</span>
+          <h3>Ҳис-туйғуларни чиқариш</h3>
+          <p style="font-size: 14px; opacity: 0.8">
+            «Парни чиқариш усули» орқали ички агрессияни йўқотамиз.
+          </p>
+          <span class="result-tag">Натижа: Тинчлик</span>
+        </div>
+
+        <div class="step-item reveal">
+          <span class="step-num">3</span>
+          <h3>Янги нуқтаи назар яратиш</h3>
+          <p style="font-size: 14px; opacity: 0.8">
+            Муносабатларни хавфsiz ва равшан қилиш йўлларини кўрамиз.
+          </p>
+          <span class="result-tag">Натижа: Янги ҳаёт</span>
+        </div>
+
+        <div class="step-item reveal">
+          <span class="step-num">4</span>
+          <h3>Мулоқot сирлари</h3>
+          <p style="font-size: 14px; opacity: 0.8">
+            Эрингиз сизни эшитиши учун қандай гапириш кераклигини ўрганасиз.
+          </p>
+          <span class="result-tag">Натижа: Тушуниш</span>
+        </div>
+      </div>
+
+      <h2 class="section-header reveal" style="margin-top: 60px">
+        Ko'p so'raladigan savollar
+      </h2>
+      <div class="reveal">
+        <div class="faq-item">
+          <div class="faq-header" onclick="toggleFaq(this)">
+            <h4>Konsultatsiya qancha vaqt davom etadi?</h4>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            <p>
+              Odatda individual seans 60-90 daqiqa davom etadi. Bu vaqt ichida
+              biz muammoning ildizini topishga ulguramiz.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-header" onclick="toggleFaq(this)">
+            <h4>Natija bo'lishiga kafolat bormi?</h4>
+            <span class="faq-icon">+</span>
+          </div>
+          <div class="faq-body">
+            <p>
+              Ha! Agar berilgan tavsiyalarni bajarsangiz va seansdan so'ng
+              o'zgarish sezmasangiz, pulingizni 100% qaytaraman.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section class="bonus-section reveal">
+        <h2 style="color: var(--accent)">24 soat ichida yozilsangiz:</h2>
+        <div class="bonus-grid">
+          <div class="bonus-card">
+            <span class="bonus-label">BONUS 1</span>
+            <h4>Иборалар рўйхати</h4>
+            <p style="font-size: 13px; opacity: 0.7">
+              Жанжални тўхтатувчи "сеҳрли" сўзлар тўплами.
+            </p>
+          </div>
+          <div class="bonus-card">
+            <span class="bonus-label">BONUS 2</span>
+            <h4>Стрессни олиш амалиёти</h4>
+            <p style="font-size: 13px; opacity: 0.7">
+              5 дақиқада тинчланиш учун махсус аудио қўлланма.
+            </p>
+          </div>
+        </div>
+
+        <div class="guarantee-box">
+          <h4 style="color: #f44336">100% Kafolat</h4>
+          <p style="font-size: 13px">
+            Маслаҳатим ёқмаса ҳам пулингизни қайтараман.
+          </p>
+        </div>
+
+        <div style="margin-top: 30px">
+          <p style="font-size: 24px; font-weight: 800">149 000 сўм</p>
+          <p style="text-decoration: line-through; opacity: 0.5">500 000 сўм</p>
+        </div>
+      </section>
+
+      <!-- Telegram Contact Button -->
+      <div
+        class="telegram-contact reveal"
+        style="text-align: center; margin: 40px 0"
+      >
+        <a href="https://t.me/PSIXOLOGINGIZ_USER" class="telegram-btn">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69a.2.2 0 00-.05-.18c-.06-.05-.14-.03-.21-.02-.09.02-1.49.95-4.22 2.79-.4.27-.76.41-1.08.4-.36-.01-1.04-.2-1.55-.37-.63-.2-1.13-.31-1.09-.66.02-.18.27-.36.74-.55 2.92-1.27 4.86-2.11 5.83-2.51 2.78-1.16 3.35-1.36 3.73-1.36.08 0 .27.02.39.12.1.08.13.19.14.27-.01.06.01.24 0 .38z"
+              fill="currentColor"
+            />
+          </svg>
+          Telegramga bog'lanish
+        </a>
+      </div>
+
+      <section class="contact-form-wrapper reveal">
+        <div class="form-header">
+          <h2>Yoki ma'lumot qoldiring</h2>
+          <p>Telegramda yo'qsangiz, bu yerga yozing</p>
+        </div>
+
+        <form action="#" method="POST" class="contact-form">
+          <div class="input-group">
+            <label for="name">Ismingiz</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="To'liq ismingizni kiriting"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="phone">Telefon raqamingiz</label>
+            <div class="phone-input">
+              <div class="country-code">
+                <img src="https://flagcdn.com/w20/uz.png" alt="UZ" />
+                <span>+998</span>
+              </div>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="90 123 45 67"
+                pattern="[0-9]{2}[0-9]{3}[0-9]{2}[0-9]{2}"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="message">Qisqacha muammo haqida (ixtiyoriy)</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Qanday yordam kerak..."
+              rows="3"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            <span>Ma'lumot yuborish</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M5 12h14m-7-7l7 7-7 7"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+
+          <p class="privacy-note">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path
+                d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            Ma'lumotlaringiz 100% maxfiy saqlanadi
+          </p>
+        </form>
+      </section>
+
+      <footer>
+        <p>© 2026 Jadida Xusniddinovna. Barcha huquqlar himoyalangan.</p>
+      </footer>
     </div>
+    <script>
+      // Scroll to Telegram button function
+      function scrollToTelegram() {
+        document.querySelector('.telegram-contact').scrollIntoView({
+          behavior: 'smooth',
+          block: 'center'
+        });
+      }
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-content">
-        <div class="fade-in delay-1">
-          <div class="badge">
-            <span class="badge-text">Professional psixologik yordam</span>
-          </div>
-        </div>
+      // Scroll to form function
+      function scrollToForm() {
+        document.querySelector('.contact-form-wrapper').scrollIntoView({
+          behavior: 'smooth',
+          block: 'center'
+        });
+      }
 
-        <div class="fade-in delay-2">
-          <h1>
-            <span class="gradient-text">O'zingizni yaxshi his qilish</span>
-            <span class="gradient-accent">sizning haqqingiz</span>
-          </h1>
-        </div>
+      // Accordion Logic
+      function toggleFaq(element) {
+        const item = element.parentElement;
+        item.classList.toggle("active");
+      }
 
-        <div class="fade-in delay-3">
-          <p class="hero-description">
-            Hayotdagi qiyinchiliklar, stress, tashvish yoki shunchaki
-            gaplashmoqchi bo'lsangiz - men siz bilan birgaman.
-          </p>
-        </div>
+      // Reveal Animation Logic
+      const observerOptions = { threshold: 0.1 };
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+          }
+        });
+      }, observerOptions);
 
-
-
-        <div class="fade-in delay-5">
-          <p class="privacy-note">Maxfiylik 100% kafolatlanadi</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Services Section -->
-    <section>
-      <div class="container">
-        <div class="fade-in">
-          <h2 class="section-title">
-            <span class="gradient-text">Sizga qanday yordam bera olaman</span>
-          </h2>
-          <p class="section-subtitle">
-            Har bir inson o'ziga xos. Men sizning muammolaringizni tinglab,
-            to'g'ri yo'l topishda yordam beraman.
-          </p>
-        </div>
-
-        <div class="grid grid-3">
-          <div class="fade-in delay-1">
-            <div class="card">
-              <div class="card-glow"></div>
-              <div style="position: relative">
-                <h3 class="card-title">Stress va tashvish</h3>
-                <p class="card-desc">
-                  Kundalik hayotdagi stress, qo'rquv va tashvishlarni
-                  boshqarishni o'rganamiz
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="fade-in delay-2">
-            <div class="card">
-              <div class="card-glow"></div>
-              <div style="position: relative">
-                <h3 class="card-title">Munosabatlar</h3>
-                <p class="card-desc">
-                  Oila, sevgi, do'stlik - munosabatlardagi qiyinchiliklarni hal
-                  qilamiz
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="fade-in delay-3">
-            <div class="card">
-              <div class="card-glow"></div>
-              <div style="position: relative">
-                <h3 class="card-title">O'zini rivojlantirish</h3>
-                <p class="card-desc">
-                  O'z-o'zini anglash, maqsadlar qo'yish va o'sishda
-                  qo'llab-quvvatlayman
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="fade-in delay-1">
-            <div class="card">
-              <div class="card-glow"></div>
-              <div style="position: relative">
-                <h3 class="card-title">Depressiya</h3>
-                <p class="card-desc">
-                  Ruhiy tushkunlik, motivatsiya yo'qligi - birgalikda engamiz
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="fade-in delay-2">
-            <div class="card">
-              <div class="card-glow"></div>
-              <div style="position: relative">
-                <h3 class="card-title">Karera va ta'lim</h3>
-                <p class="card-desc">
-                  Professional yo'nalish, qaror qabul qilish va maqsadlarga
-                  erishishda yordam
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="fade-in delay-3">
-            <div class="card">
-              <div class="card-glow"></div>
-              <div style="position: relative">
-                <h3 class="card-title">O'tmish travmalari</h3>
-                <p class="card-desc">
-                  O'tmishdagi og'riqli tajribalarni ishlash va oldinga qadam
-                  qo'yish
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Process Section -->
-    <section class="process-section">
-      <div class="container">
-        <div class="fade-in">
-          <h2 class="section-title">
-            <span class="gradient-text">Qanday o'tadi</span>
-          </h2>
-        </div>
-
-        <div class="process-list">
-          <div class="fade-in-left delay-1">
-            <div class="process-item">
-              <div class="process-number">01</div>
-              <div class="process-content">
-                <h3>Birinchi suhbat - bepul</h3>
-                <p>
-                  15-20 daqiqalik tanishuv suhbati. Qanday yordam kerakligini
-                  bilib olamiz.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="fade-in-left delay-2">
-            <div class="process-item">
-              <div class="process-number">02</div>
-              <div class="process-content">
-                <h3>Ishonchli muhit</h3>
-                <p>
-                  Siz bilan maxfiy, xavfsiz muhitda gaplashamiz. Hech kim
-                  bilmaydi.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="fade-in-left delay-3">
-            <div class="process-item">
-              <div class="process-number">03</div>
-              <div class="process-content">
-                <h3>Individual yondashuv</h3>
-                <p>
-                  Har bir inson o'ziga xos. Sizning ehtiyojlaringizga
-                  moslashtirilgan yordam.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Form Section -->
-    <section>
-      <div class="container-sm">
-        <div class="fade-in">
-          <div class="form-wrapper">
-            <div class="form-glow"></div>
-            <div class="form-container">
-              <div style="text-align: center; margin-bottom: 2rem;">
-                <a href="https://t.me/YOURBOT" target="_blank" class="cta-button">
-                  <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                    <path
-                      d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196 1.006.128.832.941z"
-                    />
-                  </svg>
-                  Telegram kanalga ulanish
-                </a>
-              </div>
-
-              <h2 class="form-title">
-                <span class="gradient-text">Birinchi qadam tashlang</span>
-              </h2>
-
-              <p class="form-subtitle">
-                Raqamingizni qoldiring, birinchi bepul konsultatsiyani
-                belgilaymiz
-              </p>
-
-              <div class="input-wrapper">
-                <div class="phone-prefix">+998</div>
-                <input
-                  type="tel"
-                  id="phoneInput"
-                  class="phone-input"
-                  placeholder="90 123 45 67"
-                  maxlength="12"
-                />
-              </div>
-
-              <button type="button" id="submitBtn" class="submit-button">
-                Bepul konsultatsiya olish
-              </button>
-
-              <div id="statusMessage" style="display: none"></div>
-
-              <div class="privacy-box">
-                <div class="privacy-content">
-                  <svg
-                    class="privacy-icon"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
-                    />
-                  </svg>
-                  <p>
-                    Sizning ma'lumotlaringiz 100% maxfiy. Hech kimga berilmaydi.
-                    Faqat konsultatsiya uchun bog'lanish maqsadida ishlatiladi.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <p>Professional psixologik yordam xizmati</p>
-        <p>© 2026 Barcha huquqlar himoyalangan. Maxfiylik kafolatlangan.</p>
-      </div>
-    </footer>
-    <script src="./app.js"></script>
+      document
+        .querySelectorAll(".reveal")
+        .forEach((el) => observer.observe(el));
+    </script>
   </body>
 </html>
