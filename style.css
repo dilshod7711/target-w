@@ -138,7 +138,7 @@ body {
 }
 
 h1 {
-  font-size: 1.25rem;
+  font-size: 1.8rem;
   font-weight: bold;
   line-height: 1.1;
   margin-bottom: 0.75rem;
@@ -148,19 +148,19 @@ h1 {
 
 @media (min-width: 360px) {
   h1 {
-    font-size: 1.375rem;
+    font-size: 2rem;
   }
 }
 
 @media (min-width: 400px) {
   h1 {
-    font-size: 1.5rem;
+    font-size: 3.1rem;
   }
 }
 
 @media (min-width: 480px) {
   h1 {
-    font-size: 1.75rem;
+    font-size: 3.5rem;
     margin-bottom: 1rem;
     line-height: 1.2;
   }
@@ -168,20 +168,26 @@ h1 {
 
 @media (min-width: 640px) {
   h1 {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 }
 
 @media (min-width: 768px) {
   h1 {
-    font-size: 2.25rem;
+    font-size: 4.5rem;
     margin-bottom: 1.5rem;
   }
 }
 
 @media (min-width: 1024px) {
   h1 {
-    font-size: 2.75rem;
+    font-size: 5.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 6rem;
   }
 }
 
@@ -339,7 +345,7 @@ section:first-of-type {
 }
 
 .section-title {
-  font-size: 1.125rem;
+  font-size: 1.4rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 0.75rem;
@@ -391,7 +397,7 @@ section:first-of-type {
   max-width: 42rem;
   margin-left: auto;
   margin-right: auto;
-  font-size: 0.8rem;
+  font-size: 1rem;
   line-height: 1.5;
 }
 
@@ -485,10 +491,6 @@ section:first-of-type {
     padding: 1.5rem;
   }
 }
-
-
-
-
 
 .card-icon {
   font-size: 3rem;
