@@ -1,3 +1,4 @@
+/* --- ASOSIY SOZLAMALAR --- */
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +7,10 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: #400C01;
-  color: #F5F1DE;
-  overflow-x: hidden;
+  background: #400c01;
+  color: #f5f1de;
+  overflow-x: hidden; /* Gorizontal scroll-ni yo'qotadi */
+  width: 100%;
 }
 
 /* Radial Gradients */
@@ -22,13 +24,13 @@ body {
 .radial-1 {
   position: absolute;
   inset: 0;
-  background: #400C01;
+  background: #400c01;
 }
 
 .radial-2 {
   position: absolute;
   inset: 0;
-  background: #400C01;
+  background: #400c01;
 }
 
 /* Container */
@@ -45,13 +47,15 @@ body {
 }
 
 @media (min-width: 640px) {
-  .container, .container-sm {
+  .container,
+  .container-sm {
     padding: 0 1rem;
   }
 }
 
 @media (min-width: 768px) {
-  .container, .container-sm {
+  .container,
+  .container-sm {
     padding: 0 1.5rem;
   }
 }
@@ -69,8 +73,8 @@ body {
 
 @media (max-width: 480px) {
   .hero {
-    min-height: 75vh;
-    padding: 0.75rem 0;
+    min-height: auto; /* MOBILDA TEPAGA CHIQARISH UCHUN */
+    padding: 80px 0 20px 0; /* Yuqoridan joy tashlandi */
   }
 }
 
@@ -93,8 +97,8 @@ body {
   padding: 0.375rem 1rem;
   margin-bottom: 0.75rem;
   border-radius: 9999px;
-  background: #400C01;
-  border: 1px solid #F5F1DE;
+  background: #400c01;
+  border: 1px solid #f5f1de;
 }
 
 @media (min-width: 640px) {
@@ -113,7 +117,7 @@ body {
 .badge-text {
   font-size: 0.75rem;
   font-weight: 500;
-  color: #F5F1DE;
+  color: #f5f1de;
 }
 
 @media (min-width: 640px) {
@@ -157,16 +161,16 @@ h1 {
 }
 
 .gradient-text {
-  color: #F5F1DE;
+  color: #f5f1de;
 }
 
 .gradient-accent {
-  color: #F5F1DE;
+  color: #f5f1de;
 }
 
 .hero-description {
   font-size: 0.875rem;
-  color: #F5F1DE;
+  color: #f5f1de;
   margin-bottom: 1rem;
   line-height: 1.5;
   max-width: 42rem;
@@ -207,12 +211,12 @@ h1 {
   align-items: center;
   gap: 0.375rem;
   padding: 0.75rem 1.25rem;
-  background: #400C01;
-  border: 1px solid #F5F1DE;
+  background: #400c01;
+  border: 1px solid #f5f1de;
   border-radius: 0.625rem;
   font-size: 0.875rem;
   font-weight: 600;
-  color: #F5F1DE;
+  color: #f5f1de;
   text-decoration: none;
   transition: all 0.3s;
   cursor: pointer;
@@ -237,14 +241,14 @@ h1 {
 }
 
 .cta-button:hover {
-  background: #400C01;
-  border-color: #F5F1DE;
+  background: #400c01;
+  border-color: #f5f1de;
 }
 
 .privacy-note {
   margin-top: 0.5rem;
   font-size: 0.75rem;
-  color: #F5F1DE;
+  color: #f5f1de;
 }
 
 @media (min-width: 480px) {
@@ -263,7 +267,7 @@ h1 {
 /* Section */
 section {
   position: relative;
-  padding: 1rem 0;
+  padding: 1.5rem 0; /* SECTIONLAR ORASIDAGI MASOFA TO'G'RILANDI */
   z-index: 1;
 }
 
@@ -341,13 +345,19 @@ section:first-of-type {
 
 .section-subtitle {
   text-align: center;
-  color: #F5F1DE;
+  color: #f5f1de;
   margin-bottom: 1.5rem;
   max-width: 42rem;
   margin-left: auto;
   margin-right: auto;
   font-size: 0.8rem;
   line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+  .section-subtitle {
+    margin-bottom: 1.5rem !important; /* MOBILDA BO'SHLIQ QISQARTIRILDI */
+  }
 }
 
 @media (min-width: 480px) {
@@ -407,9 +417,9 @@ section:first-of-type {
 .card {
   position: relative;
   padding: 0.75rem;
-  background: #400C01;
+  background: #400c01;
   backdrop-filter: blur(4px);
-  border: 1px solid #F5F1DE;
+  border: 1px solid #f5f1de;
   border-radius: 0.75rem;
   transition: all 0.3s;
   height: 100%;
@@ -429,13 +439,13 @@ section:first-of-type {
 }
 
 .card:hover {
-  border-color: #F5F1DE;
+  border-color: #f5f1de;
 }
 
 .card-glow {
   position: absolute;
   inset: 0;
-  background: "#F5F1DE";
+  background: #f5f1de; /* QO'SHTIRNOQ OLIB TASHLANDI */
   border-radius: 1rem;
   filter: blur(2rem);
   opacity: 0;
@@ -456,7 +466,7 @@ section:first-of-type {
   font-size: 0.875rem;
   font-weight: bold;
   margin-bottom: 0.375rem;
-  color: #F5F1DE;
+  color: #f5f1de;
 }
 
 @media (min-width: 480px) {
@@ -473,7 +483,7 @@ section:first-of-type {
 }
 
 .card-desc {
-  color: #F5F1DE;
+  color: #f5f1de;
   line-height: 1.5;
   font-size: 0.75rem;
 }
@@ -494,7 +504,7 @@ section:first-of-type {
 
 /* Process Section */
 .process-section {
-  background: #400C01;
+  background: #400c01;
 }
 
 .process-list {
@@ -510,8 +520,8 @@ section:first-of-type {
   display: flex;
   gap: 1rem;
   padding: 1rem 1.5rem;
-  background: #400C01;
-  border: 1px solid #F5F1DE;
+  background: #400c01;
+  border: 1px solid #f5f1de;
   border-radius: 1rem;
   transition: all 0.3s;
 }
@@ -524,13 +534,13 @@ section:first-of-type {
 }
 
 .process-item:hover {
-  border-color: #F5F1DE;
+  border-color: #f5f1de;
 }
 
 .process-number {
   font-size: 2rem;
   font-weight: bold;
-  color: #F5F1DE;
+  color: #f5f1de;
   opacity: 0.2;
 }
 
@@ -544,7 +554,7 @@ section:first-of-type {
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: #F5F1DE;
+  color: #f5f1de;
 }
 
 @media (min-width: 768px) {
@@ -554,7 +564,7 @@ section:first-of-type {
 }
 
 .process-content p {
-  color: #F5F1DE;
+  color: #f5f1de;
   line-height: 1.6;
   font-size: 0.875rem;
 }
@@ -575,7 +585,7 @@ section:first-of-type {
 .form-glow {
   position: absolute;
   inset: 0;
-  background: #400C01;
+  background: #400c01;
   border-radius: 2.5rem;
   filter: blur(3rem);
 }
@@ -583,9 +593,9 @@ section:first-of-type {
 .form-container {
   position: relative;
   padding: 1.5rem;
-  background: #400C01;
+  background: #400c01;
   backdrop-filter: blur(24px);
-  border: 1px solid #F5F1DE;
+  border: 1px solid #f5f1de;
   border-radius: 2rem;
 }
 
@@ -623,7 +633,7 @@ section:first-of-type {
 
 .form-subtitle {
   text-align: center;
-  color: #F5F1DE;
+  color: #f5f1de;
   margin-bottom: 1.5rem;
   font-size: 0.875rem;
   line-height: 1.6;
@@ -646,7 +656,7 @@ section:first-of-type {
   left: 1rem;
   top: 50%;
   transform: translateY(-50%);
-  color: #F5F1DE;
+  color: #f5f1de;
   font-weight: 500;
 }
 
@@ -659,11 +669,11 @@ section:first-of-type {
 .phone-input {
   width: 100%;
   padding: 1rem 1rem 1rem 4rem;
-  background: #400C01;
-  border: 1px solid #F5F1DE;
+  background: #400c01;
+  border: 1px solid #f5f1de;
   border-radius: 0.75rem;
   font-size: 1rem;
-  color: #F5F1DE;
+  color: #f5f1de;
   transition: all 0.3s;
 }
 
@@ -677,22 +687,22 @@ section:first-of-type {
 
 .phone-input:focus {
   outline: none;
-  border-color: #F5F1DE;
+  border-color: #f5f1de;
 }
 
 .phone-input::placeholder {
-  color: #F5F1DE;
+  color: #f5f1de;
 }
 
 .submit-button {
   width: 100%;
   padding: 1rem;
-  background: #400C01;
-  border: 1px solid #F5F1DE;
+  background: #400c01;
+  border: 1px solid #f5f1de;
   border-radius: 0.75rem;
   font-size: 1rem;
   font-weight: 600;
-  color: #F5F1DE;
+  color: #f5f1de;
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -706,8 +716,8 @@ section:first-of-type {
 }
 
 .submit-button:hover:not(:disabled) {
-  background: #400C01;
-  border-color: #F5F1DE;
+  background: #400c01;
+  border-color: #f5f1de;
 }
 
 .submit-button:disabled {
@@ -723,22 +733,22 @@ section:first-of-type {
 }
 
 .status-success {
-  background: #400C01;
-  border: 1px solid #F5F1DE;
-  color: #F5F1DE;
+  background: #400c01;
+  border: 1px solid #f5f1de;
+  color: #f5f1de;
 }
 
 .status-error {
-  background: #F5F1DE;
-  border: 2px solid #400C01;
-  color: #400C01;
+  background: #f5f1de;
+  border: 2px solid #400c01;
+  color: #400c01;
   box-shadow: 0 4px 12px rgba(64, 12, 1, 0.3);
 }
 
 .privacy-box {
   margin-top: 2rem;
   padding-top: 1.5rem;
-  border-top: 1px solid #F5F1DE;
+  border-top: 1px solid #f5f1de;
 }
 
 .privacy-content {
@@ -746,13 +756,13 @@ section:first-of-type {
   align-items: flex-start;
   gap: 0.75rem;
   font-size: 0.75rem;
-  color: #F5F1DE;
+  color: #f5f1de;
 }
 
 .privacy-icon {
   width: 1.25rem;
   height: 1.25rem;
-  color: #F5F1DE;
+  color: #f5f1de;
   flex-shrink: 0;
   margin-top: 0.125rem;
 }
@@ -761,28 +771,28 @@ section:first-of-type {
 footer {
   position: relative;
   padding: 3rem 1.25rem;
-  border-top: 1px solid #F5F1DE;
+  border-top: 1px solid #f5f1de;
   text-align: center;
   z-index: 1;
   margin-top: 40px;
 }
 
 footer p {
-  color: #F5F1DE;
+  color: #f5f1de;
   font-size: 0.875rem;
   margin-bottom: 0.5rem;
 }
 
 footer p:last-child {
   font-size: 0.75rem;
-  color: #F5F1DE;
+  color: #f5f1de;
   margin-bottom: 0;
 }
 
-/* Animations */
+/* Animations - SCROLL MUAMMOSI TO'G'RILANDI */
 .fade-in {
   opacity: 0;
-  transform: translateY(40px);
+  transform: translateY(20px); /* 40px-dan 20px-ga kamaytirildi */
   animation: fadeInUp 0.6s ease forwards;
 }
 
@@ -795,7 +805,7 @@ footer p:last-child {
 
 .fade-in-left {
   opacity: 0;
-  transform: translateX(40px);
+  transform: translateX(20px); /* 40px-dan 20px-ga kamaytirildi */
   animation: fadeInLeft 0.6s ease forwards;
 }
 
