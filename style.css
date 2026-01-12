@@ -6,8 +6,8 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: linear-gradient(to bottom right, #064e3b, #115e59, #0f172a);
-  color: white;
+  background: linear-gradient(to bottom right, #400C01, #5a1a0a, #2a0801);
+  color: #F5F1DE;
   overflow-x: hidden;
 }
 
@@ -24,7 +24,7 @@ body {
   inset: 0;
   background: radial-gradient(
     circle at 30% 20%,
-    rgba(16, 185, 129, 0.08),
+    rgba(245, 241, 222, 0.08),
     transparent 50%
   );
 }
@@ -34,7 +34,7 @@ body {
   inset: 0;
   background: radial-gradient(
     circle at 70% 80%,
-    rgba(45, 212, 191, 0.05),
+    rgba(245, 241, 222, 0.05),
     transparent 50%
   );
 }
@@ -78,16 +78,16 @@ body {
   border-radius: 9999px;
   background: linear-gradient(
     to right,
-    rgba(16, 185, 129, 0.1),
-    rgba(20, 184, 166, 0.1)
+    rgba(245, 241, 222, 0.1),
+    rgba(245, 241, 222, 0.15)
   );
-  border: 1px solid rgba(16, 185, 129, 0.2);
+  border: 1px solid rgba(245, 241, 222, 0.2);
 }
 
 .badge-text {
   font-size: 0.875rem;
   font-weight: 500;
-  background: linear-gradient(to right, rgb(52, 211, 153), rgb(45, 212, 191));
+  background: linear-gradient(to right, #F5F1DE, rgba(245, 241, 222, 0.8));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -101,14 +101,14 @@ h1 {
 }
 
 .gradient-text {
-  background: linear-gradient(to right, white, rgb(209, 250, 229), white);
+  background: linear-gradient(to right, #F5F1DE, rgba(245, 241, 222, 0.9));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .gradient-accent {
-  background: linear-gradient(to right, rgb(52, 211, 153), rgb(45, 212, 191));
+  background: linear-gradient(to right, rgba(245, 241, 222, 0.8), #F5F1DE);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -116,7 +116,7 @@ h1 {
 
 .hero-description {
   font-size: 1.125rem;
-  color: rgb(203, 213, 225);
+  color: rgba(245, 241, 222, 0.8);
   margin-bottom: 3rem;
   line-height: 1.75;
   max-width: 42rem;
@@ -129,19 +129,20 @@ h1 {
   align-items: center;
   gap: 0.75rem;
   padding: 1rem 2rem;
-  background: linear-gradient(to right, rgb(5, 150, 105), rgb(13, 148, 136));
+  background: linear-gradient(to right, #400C01, rgba(64, 12, 1, 0.8));
+  border: 1px solid rgba(245, 241, 222, 0.3);
   border-radius: 1rem;
   font-size: 1.125rem;
   font-weight: 600;
-  color: white;
+  color: #F5F1DE;
   text-decoration: none;
   transition: all 0.3s;
-  border: none;
   cursor: pointer;
 }
 
 .cta-button:hover {
-  background: linear-gradient(to right, rgb(16, 185, 129), rgb(20, 184, 166));
+  background: linear-gradient(to right, rgba(64, 12, 1, 0.9), #400C01);
+  border-color: rgba(245, 241, 222, 0.5);
   transform: scale(1.05);
 }
 
@@ -215,11 +216,7 @@ section {
 .card-glow {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom right,
-    rgba(5, 150, 105, 0.2),
-    rgba(13, 148, 136, 0.2)
-  );
+  background: "#F5F1DE";
   border-radius: 1rem;
   filter: blur(2rem);
   opacity: 0;
@@ -240,14 +237,14 @@ section {
   font-size: 1.125rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  background: linear-gradient(to right, white, rgb(203, 213, 225));
+  background: linear-gradient(to right, #F5F1DE, rgba(245, 241, 222, 0.8));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
 .card-desc {
-  color: rgb(148, 163, 184);
+  color: rgba(245, 241, 222, 0.7);
   line-height: 1.75;
   font-size: 0.875rem;
 }
@@ -325,8 +322,8 @@ section {
   inset: 0;
   background: linear-gradient(
     to bottom right,
-    rgba(5, 150, 105, 0.2),
-    rgba(13, 148, 136, 0.2)
+    rgba(245, 241, 222, 0.1),
+    rgba(245, 241, 222, 0.05)
   );
   border-radius: 2.5rem;
   filter: blur(3rem);
@@ -337,11 +334,11 @@ section {
   padding: 2rem;
   background: linear-gradient(
     to bottom right,
-    rgba(30, 41, 59, 0.8),
-    rgba(15, 23, 42, 0.8)
+    rgba(64, 12, 1, 0.8),
+    rgba(42, 8, 1, 0.8)
   );
   backdrop-filter: blur(24px);
-  border: 1px solid rgba(51, 65, 85, 0.5);
+  border: 1px solid rgba(245, 241, 222, 0.2);
   border-radius: 2.5rem;
 }
 
@@ -366,7 +363,7 @@ section {
 
 .form-subtitle {
   text-align: center;
-  color: rgb(148, 163, 184);
+  color: rgba(245, 241, 222, 0.7);
   margin-bottom: 2rem;
 }
 
@@ -380,45 +377,46 @@ section {
   left: 1.25rem;
   top: 50%;
   transform: translateY(-50%);
-  color: rgb(148, 163, 184);
+  color: rgba(245, 241, 222, 0.7);
   font-weight: 500;
 }
 
 .phone-input {
   width: 100%;
   padding: 1.25rem 1.25rem 1.25rem 5rem;
-  background: rgba(15, 23, 42, 0.5);
-  border: 1px solid rgb(51, 65, 85);
+  background: rgba(64, 12, 1, 0.3);
+  border: 1px solid rgba(245, 241, 222, 0.3);
   border-radius: 1rem;
   font-size: 1.125rem;
-  color: white;
+  color: #F5F1DE;
   transition: all 0.3s;
 }
 
 .phone-input:focus {
   outline: none;
-  border-color: rgba(16, 185, 129, 0.5);
+  border-color: rgba(245, 241, 222, 0.5);
 }
 
 .phone-input::placeholder {
-  color: rgb(71, 85, 105);
+  color: rgba(245, 241, 222, 0.5);
 }
 
 .submit-button {
   width: 100%;
   padding: 1.25rem;
-  background: linear-gradient(to right, rgb(5, 150, 105), rgb(13, 148, 136));
-  border: none;
+  background: linear-gradient(to right, #400C01, rgba(64, 12, 1, 0.8));
+  border: 1px solid rgba(245, 241, 222, 0.3);
   border-radius: 1rem;
   font-size: 1.125rem;
   font-weight: 600;
-  color: white;
+  color: #F5F1DE;
   cursor: pointer;
   transition: all 0.3s;
 }
 
 .submit-button:hover:not(:disabled) {
-  background: linear-gradient(to right, rgb(16, 185, 129), rgb(20, 184, 166));
+  background: linear-gradient(to right, rgba(64, 12, 1, 0.9), #400C01);
+  border-color: rgba(245, 241, 222, 0.5);
   transform: scale(1.02);
 }
 
@@ -449,7 +447,7 @@ section {
 .privacy-box {
   margin-top: 2rem;
   padding-top: 1.5rem;
-  border-top: 1px solid rgba(51, 65, 85, 0.3);
+  border-top: 1px solid rgba(245, 241, 222, 0.2);
 }
 
 .privacy-content {
@@ -457,13 +455,13 @@ section {
   align-items: flex-start;
   gap: 0.75rem;
   font-size: 0.75rem;
-  color: rgb(100, 116, 139);
+  color: rgba(245, 241, 222, 0.6);
 }
 
 .privacy-icon {
   width: 1.25rem;
   height: 1.25rem;
-  color: rgba(16, 185, 129, 0.5);
+  color: rgba(245, 241, 222, 0.5);
   flex-shrink: 0;
   margin-top: 0.125rem;
 }
