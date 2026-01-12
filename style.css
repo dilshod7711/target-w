@@ -59,7 +59,7 @@ body {
 /* Hero Section */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,8 +69,8 @@ body {
 
 @media (max-width: 480px) {
   .hero {
-    min-height: 90vh;
-    padding: 0.5rem 0;
+    min-height: 75vh;
+    padding: 0.75rem 0;
   }
 }
 
@@ -167,7 +167,7 @@ h1 {
 .hero-description {
   font-size: 0.875rem;
   color: #F5F1DE;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
   line-height: 1.5;
   max-width: 42rem;
   margin-left: auto;
@@ -178,6 +178,7 @@ h1 {
   .hero-description {
     font-size: 1rem;
     line-height: 1.6;
+    margin-bottom: 1.25rem;
   }
 }
 
@@ -241,56 +242,68 @@ h1 {
 }
 
 .privacy-note {
-  margin-top: 0.75rem;
+  margin-top: 0.5rem;
   font-size: 0.75rem;
   color: #F5F1DE;
 }
 
 @media (min-width: 480px) {
   .privacy-note {
-    margin-top: 1rem;
+    margin-top: 0.75rem;
     font-size: 0.875rem;
   }
 }
 
 @media (min-width: 768px) {
   .privacy-note {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
   }
 }
 
 /* Section */
 section {
   position: relative;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   z-index: 1;
 }
 
 @media (min-width: 640px) {
   section {
-    padding: 2rem 0;
+    padding: 1.5rem 0;
   }
 }
 
 @media (min-width: 768px) {
   section {
-    padding: 3rem 0;
+    padding: 2rem 0;
   }
 }
 
 @media (min-width: 1024px) {
   section {
-    padding: 4rem 0;
+    padding: 3rem 0;
   }
 }
 
 section:first-of-type {
-  padding-top: 1rem;
+  padding-top: 1.5rem;
 }
 
 @media (min-width: 640px) {
   section:first-of-type {
-    padding-top: 1.5rem;
+    padding-top: 2rem;
+  }
+}
+
+@media (min-width: 768px) {
+  section:first-of-type {
+    padding-top: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  section:first-of-type {
+    padding-top: 3rem;
   }
 }
 
