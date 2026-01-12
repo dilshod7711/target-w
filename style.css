@@ -6,7 +6,7 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: linear-gradient(to bottom right, #400C01, #5a1a0a, #2a0801);
+  background: #400C01;
   color: #F5F1DE;
   overflow-x: hidden;
 }
@@ -76,21 +76,14 @@ body {
   padding: 0.5rem 1.25rem;
   margin-bottom: 1.5rem;
   border-radius: 9999px;
-  background: linear-gradient(
-    to right,
-    rgba(245, 241, 222, 0.1),
-    rgba(245, 241, 222, 0.15)
-  );
-  border: 1px solid rgba(245, 241, 222, 0.2);
+  background: #400C01;
+  border: 1px solid #F5F1DE;
 }
 
 .badge-text {
   font-size: 0.875rem;
   font-weight: 500;
-  background: linear-gradient(to right, #F5F1DE, rgba(245, 241, 222, 0.8));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #F5F1DE;
 }
 
 h1 {
@@ -101,22 +94,16 @@ h1 {
 }
 
 .gradient-text {
-  background: linear-gradient(to right, #F5F1DE, rgba(245, 241, 222, 0.9));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #F5F1DE;
 }
 
 .gradient-accent {
-  background: linear-gradient(to right, rgba(245, 241, 222, 0.8), #F5F1DE);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #F5F1DE;
 }
 
 .hero-description {
   font-size: 1.125rem;
-  color: rgba(245, 241, 222, 0.8);
+  color: #F5F1DE;
   margin-bottom: 3rem;
   line-height: 1.75;
   max-width: 42rem;
@@ -129,8 +116,8 @@ h1 {
   align-items: center;
   gap: 0.75rem;
   padding: 1rem 2rem;
-  background: linear-gradient(to right, #400C01, rgba(64, 12, 1, 0.8));
-  border: 1px solid rgba(245, 241, 222, 0.3);
+  background: #400C01;
+  border: 1px solid #F5F1DE;
   border-radius: 1rem;
   font-size: 1.125rem;
   font-weight: 600;
@@ -141,9 +128,8 @@ h1 {
 }
 
 .cta-button:hover {
-  background: linear-gradient(to right, rgba(64, 12, 1, 0.9), #400C01);
-  border-color: rgba(245, 241, 222, 0.5);
-  transform: scale(1.05);
+  background: #400C01;
+  border-color: #F5F1DE;
 }
 
 .privacy-note {
@@ -197,20 +183,16 @@ section {
 .card {
   position: relative;
   padding: 1.5rem;
-  background: linear-gradient(
-    to bottom right,
-    rgba(30, 41, 59, 0.5),
-    rgba(15, 23, 42, 0.5)
-  );
+  background: #400C01;
   backdrop-filter: blur(4px);
-  border: 1px solid rgba(51, 65, 85, 0.5);
+  border: 1px solid #F5F1DE;
   border-radius: 1rem;
   transition: all 0.3s;
   height: 100%;
 }
 
 .card:hover {
-  border-color: rgba(100, 116, 139, 0.5);
+  border-color: #F5F1DE;
 }
 
 .card-glow {
@@ -237,14 +219,11 @@ section {
   font-size: 1.125rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  background: linear-gradient(to right, #F5F1DE, rgba(245, 241, 222, 0.8));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #F5F1DE;
 }
 
 .card-desc {
-  color: rgba(245, 241, 222, 0.7);
+  color: #F5F1DE;
   line-height: 1.75;
   font-size: 0.875rem;
 }
@@ -332,13 +311,9 @@ section {
 .form-container {
   position: relative;
   padding: 2rem;
-  background: linear-gradient(
-    to bottom right,
-    rgba(64, 12, 1, 0.8),
-    rgba(42, 8, 1, 0.8)
-  );
+  background: #400C01;
   backdrop-filter: blur(24px);
-  border: 1px solid rgba(245, 241, 222, 0.2);
+  border: 1px solid #F5F1DE;
   border-radius: 2.5rem;
 }
 
@@ -363,7 +338,7 @@ section {
 
 .form-subtitle {
   text-align: center;
-  color: rgba(245, 241, 222, 0.7);
+  color: #F5F1DE;
   margin-bottom: 2rem;
 }
 
@@ -377,15 +352,15 @@ section {
   left: 1.25rem;
   top: 50%;
   transform: translateY(-50%);
-  color: rgba(245, 241, 222, 0.7);
+  color: #F5F1DE;
   font-weight: 500;
 }
 
 .phone-input {
   width: 100%;
   padding: 1.25rem 1.25rem 1.25rem 5rem;
-  background: rgba(64, 12, 1, 0.3);
-  border: 1px solid rgba(245, 241, 222, 0.3);
+  background: #400C01;
+  border: 1px solid #F5F1DE;
   border-radius: 1rem;
   font-size: 1.125rem;
   color: #F5F1DE;
@@ -394,18 +369,18 @@ section {
 
 .phone-input:focus {
   outline: none;
-  border-color: rgba(245, 241, 222, 0.5);
+  border-color: #F5F1DE;
 }
 
 .phone-input::placeholder {
-  color: rgba(245, 241, 222, 0.5);
+  color: #F5F1DE;
 }
 
 .submit-button {
   width: 100%;
   padding: 1.25rem;
-  background: linear-gradient(to right, #400C01, rgba(64, 12, 1, 0.8));
-  border: 1px solid rgba(245, 241, 222, 0.3);
+  background: #400C01;
+  border: 1px solid #F5F1DE;
   border-radius: 1rem;
   font-size: 1.125rem;
   font-weight: 600;
@@ -415,9 +390,8 @@ section {
 }
 
 .submit-button:hover:not(:disabled) {
-  background: linear-gradient(to right, rgba(64, 12, 1, 0.9), #400C01);
-  border-color: rgba(245, 241, 222, 0.5);
-  transform: scale(1.02);
+  background: #400C01;
+  border-color: #F5F1DE;
 }
 
 .submit-button:disabled {
@@ -447,7 +421,7 @@ section {
 .privacy-box {
   margin-top: 2rem;
   padding-top: 1.5rem;
-  border-top: 1px solid rgba(245, 241, 222, 0.2);
+  border-top: 1px solid #F5F1DE;
 }
 
 .privacy-content {
@@ -455,13 +429,13 @@ section {
   align-items: flex-start;
   gap: 0.75rem;
   font-size: 0.75rem;
-  color: rgba(245, 241, 222, 0.6);
+  color: #F5F1DE;
 }
 
 .privacy-icon {
   width: 1.25rem;
   height: 1.25rem;
-  color: rgba(245, 241, 222, 0.5);
+  color: #F5F1DE;
   flex-shrink: 0;
   margin-top: 0.125rem;
 }
