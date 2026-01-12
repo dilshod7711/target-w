@@ -6,8 +6,8 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: #F5F1DE;
-  color: #400C01;
+  background: #400C01;
+  color: #F5F1DE;
   overflow-x: hidden;
 }
 
@@ -22,21 +22,13 @@ body {
 .radial-1 {
   position: absolute;
   inset: 0;
-  background: radial-gradient(
-    circle at 30% 20%,
-    rgba(245, 241, 222, 0.08),
-    transparent 50%
-  );
+  background: #400C01;
 }
 
 .radial-2 {
   position: absolute;
   inset: 0;
-  background: radial-gradient(
-    circle at 70% 80%,
-    rgba(245, 241, 222, 0.05),
-    transparent 50%
-  );
+  background: #400C01;
 }
 
 /* Container */
@@ -76,14 +68,14 @@ body {
   padding: 0.5rem 1.25rem;
   margin-bottom: 1.5rem;
   border-radius: 9999px;
-  background: #F5F1DE;
-  border: 1px solid #400C01;
+  background: #400C01;
+  border: 1px solid #F5F1DE;
 }
 
 .badge-text {
   font-size: 0.875rem;
   font-weight: 500;
-  color: #400C01;
+  color: #F5F1DE;
 }
 
 h1 {
@@ -94,16 +86,16 @@ h1 {
 }
 
 .gradient-text {
-  color: #400C01;
+  color: #F5F1DE;
 }
 
 .gradient-accent {
-  color: #400C01;
+  color: #F5F1DE;
 }
 
 .hero-description {
   font-size: 1.125rem;
-  color: #400C01;
+  color: #F5F1DE;
   margin-bottom: 3rem;
   line-height: 1.75;
   max-width: 42rem;
@@ -116,26 +108,26 @@ h1 {
   align-items: center;
   gap: 0.75rem;
   padding: 1rem 2rem;
-  background: #F5F1DE;
-  border: 1px solid #400C01;
+  background: #400C01;
+  border: 1px solid #F5F1DE;
   border-radius: 1rem;
   font-size: 1.125rem;
   font-weight: 600;
-  color: #400C01;
+  color: #F5F1DE;
   text-decoration: none;
   transition: all 0.3s;
   cursor: pointer;
 }
 
 .cta-button:hover {
-  background: #F5F1DE;
-  border-color: #400C01;
+  background: #400C01;
+  border-color: #F5F1DE;
 }
 
 .privacy-note {
   margin-top: 1.5rem;
   font-size: 0.875rem;
-  color: rgb(148, 163, 184);
+  color: #F5F1DE;
 }
 
 /* Section */
@@ -154,7 +146,7 @@ section {
 
 .section-subtitle {
   text-align: center;
-  color: rgb(148, 163, 184);
+  color: #F5F1DE;
   margin-bottom: 4rem;
   max-width: 42rem;
   margin-left: auto;
@@ -183,16 +175,16 @@ section {
 .card {
   position: relative;
   padding: 1.5rem;
-  background: #F5F1DE;
+  background: #400C01;
   backdrop-filter: blur(4px);
-  border: 1px solid #400C01;
+  border: 1px solid #F5F1DE;
   border-radius: 1rem;
   transition: all 0.3s;
   height: 100%;
 }
 
 .card:hover {
-  border-color: #400C01;
+  border-color: #F5F1DE;
 }
 
 .card-glow {
@@ -219,18 +211,18 @@ section {
   font-size: 1.125rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: #400C01;
+  color: #F5F1DE;
 }
 
 .card-desc {
-  color: #400C01;
+  color: #F5F1DE;
   line-height: 1.75;
   font-size: 0.875rem;
 }
 
 /* Process Section */
 .process-section {
-  background: #F5F1DE;
+  background: #400C01;
 }
 
 .process-list {
@@ -246,20 +238,20 @@ section {
   display: flex;
   gap: 1.5rem;
   padding: 1.5rem 2rem;
-  background: #F5F1DE;
-  border: 1px solid #400C01;
+  background: #400C01;
+  border: 1px solid #F5F1DE;
   border-radius: 1rem;
   transition: all 0.3s;
 }
 
 .process-item:hover {
-  border-color: #400C01;
+  border-color: #F5F1DE;
 }
 
 .process-number {
   font-size: 3rem;
   font-weight: bold;
-  color: #400C01;
+  color: #F5F1DE;
   opacity: 0.2;
 }
 
@@ -267,11 +259,11 @@ section {
   font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: #400C01;
+  color: #F5F1DE;
 }
 
 .process-content p {
-  color: #400C01;
+  color: #F5F1DE;
   line-height: 1.75;
 }
 
@@ -285,11 +277,7 @@ section {
 .form-glow {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom right,
-    rgba(245, 241, 222, 0.1),
-    rgba(245, 241, 222, 0.05)
-  );
+  background: #400C01;
   border-radius: 2.5rem;
   filter: blur(3rem);
 }
@@ -297,9 +285,9 @@ section {
 .form-container {
   position: relative;
   padding: 2rem;
-  background: #F5F1DE;
+  background: #400C01;
   backdrop-filter: blur(24px);
-  border: 1px solid #400C01;
+  border: 1px solid #F5F1DE;
   border-radius: 2.5rem;
 }
 
@@ -324,7 +312,7 @@ section {
 
 .form-subtitle {
   text-align: center;
-  color: #400C01;
+  color: #F5F1DE;
   margin-bottom: 2rem;
 }
 
@@ -338,46 +326,46 @@ section {
   left: 1.25rem;
   top: 50%;
   transform: translateY(-50%);
-  color: #400C01;
+  color: #F5F1DE;
   font-weight: 500;
 }
 
 .phone-input {
   width: 100%;
   padding: 1.25rem 1.25rem 1.25rem 5rem;
-  background: #F5F1DE;
-  border: 1px solid #400C01;
+  background: #400C01;
+  border: 1px solid #F5F1DE;
   border-radius: 1rem;
   font-size: 1.125rem;
-  color: #400C01;
+  color: #F5F1DE;
   transition: all 0.3s;
 }
 
 .phone-input:focus {
   outline: none;
-  border-color: #400C01;
+  border-color: #F5F1DE;
 }
 
 .phone-input::placeholder {
-  color: #400C01;
+  color: #F5F1DE;
 }
 
 .submit-button {
   width: 100%;
   padding: 1.25rem;
-  background: #F5F1DE;
-  border: 1px solid #400C01;
+  background: #400C01;
+  border: 1px solid #F5F1DE;
   border-radius: 1rem;
   font-size: 1.125rem;
   font-weight: 600;
-  color: #400C01;
+  color: #F5F1DE;
   cursor: pointer;
   transition: all 0.3s;
 }
 
 .submit-button:hover:not(:disabled) {
-  background: #F5F1DE;
-  border-color: #400C01;
+  background: #400C01;
+  border-color: #F5F1DE;
 }
 
 .submit-button:disabled {
@@ -393,21 +381,21 @@ section {
 }
 
 .status-success {
-  background: rgba(16, 185, 129, 0.1);
-  border: 1px solid rgba(16, 185, 129, 0.2);
-  color: rgb(52, 211, 153);
+  background: #400C01;
+  border: 1px solid #F5F1DE;
+  color: #F5F1DE;
 }
 
 .status-error {
-  background: rgba(239, 68, 68, 0.1);
-  border: 1px solid rgba(239, 68, 68, 0.2);
-  color: rgb(248, 113, 113);
+  background: #400C01;
+  border: 1px solid #F5F1DE;
+  color: #F5F1DE;
 }
 
 .privacy-box {
   margin-top: 2rem;
   padding-top: 1.5rem;
-  border-top: 1px solid #400C01;
+  border-top: 1px solid #F5F1DE;
 }
 
 .privacy-content {
@@ -415,13 +403,13 @@ section {
   align-items: flex-start;
   gap: 0.75rem;
   font-size: 0.75rem;
-  color: #400C01;
+  color: #F5F1DE;
 }
 
 .privacy-icon {
   width: 1.25rem;
   height: 1.25rem;
-  color: #400C01;
+  color: #F5F1DE;
   flex-shrink: 0;
   margin-top: 0.125rem;
 }
@@ -430,21 +418,21 @@ section {
 footer {
   position: relative;
   padding: 3rem 1.25rem;
-  border-top: 1px solid rgb(30, 41, 59);
+  border-top: 1px solid #F5F1DE;
   text-align: center;
   z-index: 1;
   margin-top: 40px;
 }
 
 footer p {
-  color: rgb(100, 116, 139);
+  color: #F5F1DE;
   font-size: 0.875rem;
   margin-bottom: 0.5rem;
 }
 
 footer p:last-child {
   font-size: 0.75rem;
-  color: rgb(71, 85, 105);
+  color: #F5F1DE;
   margin-bottom: 0;
 }
 
