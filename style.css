@@ -35,41 +35,46 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1.25rem;
-  margin-top: -150px;
+  padding: 0 1rem;
 }
 
 .container-sm {
   max-width: 42rem;
   margin: 0 auto;
-  padding: 0 1.25rem;
+  padding: 0 1rem;
 }
 
 /* Hero Section */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5rem 0;
+  padding: 1rem 0;
   z-index: 1;
-  margin-top: -150px;
 }
 
 .hero-content {
   text-align: center;
   max-width: 48rem;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .badge {
   display: inline-block;
   padding: 0.5rem 1.25rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   border-radius: 9999px;
   background: #400C01;
   border: 1px solid #F5F1DE;
+}
+
+@media (min-width: 768px) {
+  .badge {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .badge-text {
@@ -79,10 +84,23 @@ body {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
   line-height: 1.2;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 .gradient-text {
@@ -94,29 +112,52 @@ h1 {
 }
 
 .hero-description {
-  font-size: 1.125rem;
+  font-size: 1rem;
   color: #F5F1DE;
-  margin-bottom: 3rem;
-  line-height: 1.75;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
   max-width: 42rem;
   margin-left: auto;
   margin-right: auto;
 }
 
+@media (min-width: 768px) {
+  .hero-description {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    line-height: 1.75;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-description {
+    margin-bottom: 2.5rem;
+  }
+}
+
 .cta-button {
   display: inline-flex;
   align-items: center;
-  gap: 0.75rem;
-  padding: 1rem 2rem;
+  gap: 0.5rem;
+  padding: 0.875rem 1.5rem;
   background: #400C01;
   border: 1px solid #F5F1DE;
-  border-radius: 1rem;
-  font-size: 1.125rem;
+  border-radius: 0.75rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #F5F1DE;
   text-decoration: none;
   transition: all 0.3s;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .cta-button {
+    gap: 0.75rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-size: 1.125rem;
+  }
 }
 
 .cta-button:hover {
@@ -125,20 +166,30 @@ h1 {
 }
 
 .privacy-note {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   font-size: 0.875rem;
   color: #F5F1DE;
+}
+
+@media (min-width: 768px) {
+  .privacy-note {
+    margin-top: 1.5rem;
+  }
 }
 
 /* Section */
 section {
   position: relative;
-  padding: 6rem 0;
+  padding: 1.5rem 0;
   z-index: 1;
 }
 
+section:first-of-type {
+  padding-top: 0.5rem;
+}
+
 .section-title {
-  font-size: 2rem;
+  font-size: 1.875rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 1rem;
@@ -147,19 +198,37 @@ section {
 .section-subtitle {
   text-align: center;
   color: #F5F1DE;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   max-width: 42rem;
   margin-left: auto;
   margin-right: auto;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .section-subtitle {
+    margin-bottom: 4rem;
+    font-size: 1rem;
+  }
 }
 
 /* Grid */
 .grid {
   display: grid;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 @media (min-width: 768px) {
+  .grid {
+    gap: 1.5rem;
+  }
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
   .grid-3 {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -174,13 +243,19 @@ section {
 /* Card */
 .card {
   position: relative;
-  padding: 1.5rem;
+  padding: 1rem;
   background: #400C01;
   backdrop-filter: blur(4px);
   border: 1px solid #F5F1DE;
   border-radius: 1rem;
   transition: all 0.3s;
   height: 100%;
+}
+
+@media (min-width: 768px) {
+  .card {
+    padding: 1.5rem;
+  }
 }
 
 .card:hover {
@@ -208,16 +283,29 @@ section {
 }
 
 .card-title {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
   color: #F5F1DE;
 }
 
+@media (min-width: 768px) {
+  .card-title {
+    font-size: 1.125rem;
+  }
+}
+
 .card-desc {
   color: #F5F1DE;
-  line-height: 1.75;
-  font-size: 0.875rem;
+  line-height: 1.6;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  .card-desc {
+    font-size: 0.875rem;
+    line-height: 1.75;
+  }
 }
 
 /* Process Section */
@@ -236,12 +324,19 @@ section {
 .process-item {
   position: relative;
   display: flex;
-  gap: 1.5rem;
-  padding: 1.5rem 2rem;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
   background: #400C01;
   border: 1px solid #F5F1DE;
   border-radius: 1rem;
   transition: all 0.3s;
+}
+
+@media (min-width: 768px) {
+  .process-item {
+    gap: 1.5rem;
+    padding: 1.5rem 2rem;
+  }
 }
 
 .process-item:hover {
@@ -249,22 +344,41 @@ section {
 }
 
 .process-number {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #F5F1DE;
   opacity: 0.2;
 }
 
+@media (min-width: 768px) {
+  .process-number {
+    font-size: 3rem;
+  }
+}
+
 .process-content h3 {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
   color: #F5F1DE;
 }
 
+@media (min-width: 768px) {
+  .process-content h3 {
+    font-size: 1.25rem;
+  }
+}
+
 .process-content p {
   color: #F5F1DE;
-  line-height: 1.75;
+  line-height: 1.6;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+  .process-content p {
+    line-height: 1.75;
+  }
 }
 
 /* Form Section */
@@ -284,27 +398,40 @@ section {
 
 .form-container {
   position: relative;
-  padding: 2rem;
+  padding: 1.5rem;
   background: #400C01;
   backdrop-filter: blur(24px);
   border: 1px solid #F5F1DE;
-  border-radius: 2.5rem;
+  border-radius: 2rem;
 }
 
 @media (min-width: 768px) {
+  .form-container {
+    padding: 2rem;
+    border-radius: 2.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
   .form-container {
     padding: 3rem;
   }
 }
 
 .form-title {
-  font-size: 1.875rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
   margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
+  .form-title {
+    font-size: 1.875rem;
+  }
+}
+
+@media (min-width: 1024px) {
   .form-title {
     font-size: 2.25rem;
   }
@@ -313,7 +440,16 @@ section {
 .form-subtitle {
   text-align: center;
   color: #F5F1DE;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .form-subtitle {
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
 }
 
 .input-wrapper {
@@ -323,22 +459,36 @@ section {
 
 .phone-prefix {
   position: absolute;
-  left: 1.25rem;
+  left: 1rem;
   top: 50%;
   transform: translateY(-50%);
   color: #F5F1DE;
   font-weight: 500;
 }
 
+@media (min-width: 768px) {
+  .phone-prefix {
+    left: 1.25rem;
+  }
+}
+
 .phone-input {
   width: 100%;
-  padding: 1.25rem 1.25rem 1.25rem 5rem;
+  padding: 1rem 1rem 1rem 4rem;
   background: #400C01;
   border: 1px solid #F5F1DE;
-  border-radius: 1rem;
-  font-size: 1.125rem;
+  border-radius: 0.75rem;
+  font-size: 1rem;
   color: #F5F1DE;
   transition: all 0.3s;
+}
+
+@media (min-width: 768px) {
+  .phone-input {
+    padding: 1.25rem 1.25rem 1.25rem 5rem;
+    border-radius: 1rem;
+    font-size: 1.125rem;
+  }
 }
 
 .phone-input:focus {
@@ -352,15 +502,23 @@ section {
 
 .submit-button {
   width: 100%;
-  padding: 1.25rem;
+  padding: 1rem;
   background: #400C01;
   border: 1px solid #F5F1DE;
-  border-radius: 1rem;
-  font-size: 1.125rem;
+  border-radius: 0.75rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #F5F1DE;
   cursor: pointer;
   transition: all 0.3s;
+}
+
+@media (min-width: 768px) {
+  .submit-button {
+    padding: 1.25rem;
+    border-radius: 1rem;
+    font-size: 1.125rem;
+  }
 }
 
 .submit-button:hover:not(:disabled) {
@@ -387,9 +545,10 @@ section {
 }
 
 .status-error {
-  background: #400C01;
-  border: 1px solid #F5F1DE;
-  color: #F5F1DE;
+  background: #F5F1DE;
+  border: 2px solid #400C01;
+  color: #400C01;
+  box-shadow: 0 4px 12px rgba(64, 12, 1, 0.3);
 }
 
 .privacy-box {
