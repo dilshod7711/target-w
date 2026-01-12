@@ -6,8 +6,8 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: #400C01;
-  color: #F5F1DE;
+  background: #F5F1DE;
+  color: #400C01;
   overflow-x: hidden;
 }
 
@@ -76,14 +76,14 @@ body {
   padding: 0.5rem 1.25rem;
   margin-bottom: 1.5rem;
   border-radius: 9999px;
-  background: #400C01;
-  border: 1px solid #F5F1DE;
+  background: #F5F1DE;
+  border: 1px solid #400C01;
 }
 
 .badge-text {
   font-size: 0.875rem;
   font-weight: 500;
-  color: #F5F1DE;
+  color: #400C01;
 }
 
 h1 {
@@ -94,16 +94,16 @@ h1 {
 }
 
 .gradient-text {
-  color: #F5F1DE;
+  color: #400C01;
 }
 
 .gradient-accent {
-  color: #F5F1DE;
+  color: #400C01;
 }
 
 .hero-description {
   font-size: 1.125rem;
-  color: #F5F1DE;
+  color: #400C01;
   margin-bottom: 3rem;
   line-height: 1.75;
   max-width: 42rem;
@@ -116,20 +116,20 @@ h1 {
   align-items: center;
   gap: 0.75rem;
   padding: 1rem 2rem;
-  background: #400C01;
-  border: 1px solid #F5F1DE;
+  background: #F5F1DE;
+  border: 1px solid #400C01;
   border-radius: 1rem;
   font-size: 1.125rem;
   font-weight: 600;
-  color: #F5F1DE;
+  color: #400C01;
   text-decoration: none;
   transition: all 0.3s;
   cursor: pointer;
 }
 
 .cta-button:hover {
-  background: #400C01;
-  border-color: #F5F1DE;
+  background: #F5F1DE;
+  border-color: #400C01;
 }
 
 .privacy-note {
@@ -183,16 +183,16 @@ section {
 .card {
   position: relative;
   padding: 1.5rem;
-  background: #400C01;
+  background: #F5F1DE;
   backdrop-filter: blur(4px);
-  border: 1px solid #F5F1DE;
+  border: 1px solid #400C01;
   border-radius: 1rem;
   transition: all 0.3s;
   height: 100%;
 }
 
 .card:hover {
-  border-color: #F5F1DE;
+  border-color: #400C01;
 }
 
 .card-glow {
@@ -219,22 +219,18 @@ section {
   font-size: 1.125rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  color: #F5F1DE;
+  color: #400C01;
 }
 
 .card-desc {
-  color: #F5F1DE;
+  color: #400C01;
   line-height: 1.75;
   font-size: 0.875rem;
 }
 
 /* Process Section */
 .process-section {
-  background: linear-gradient(
-    to bottom right,
-    rgba(15, 23, 42, 0.5),
-    transparent
-  );
+  background: #F5F1DE;
 }
 
 .process-list {
@@ -250,27 +246,20 @@ section {
   display: flex;
   gap: 1.5rem;
   padding: 1.5rem 2rem;
-  background: linear-gradient(to right, rgba(30, 41, 59, 0.3), transparent);
-  border: 1px solid rgba(51, 65, 85, 0.3);
+  background: #F5F1DE;
+  border: 1px solid #400C01;
   border-radius: 1rem;
   transition: all 0.3s;
 }
 
 .process-item:hover {
-  border-color: rgba(16, 185, 129, 0.3);
+  border-color: #400C01;
 }
 
 .process-number {
   font-size: 3rem;
   font-weight: bold;
-  background: linear-gradient(
-    to bottom right,
-    rgb(52, 211, 153),
-    rgb(45, 212, 191)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #400C01;
   opacity: 0.2;
 }
 
@@ -278,14 +267,11 @@ section {
   font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  background: linear-gradient(to right, white, rgb(203, 213, 225));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #400C01;
 }
 
 .process-content p {
-  color: rgb(148, 163, 184);
+  color: #400C01;
   line-height: 1.75;
 }
 
@@ -311,9 +297,9 @@ section {
 .form-container {
   position: relative;
   padding: 2rem;
-  background: #400C01;
+  background: #F5F1DE;
   backdrop-filter: blur(24px);
-  border: 1px solid #F5F1DE;
+  border: 1px solid #400C01;
   border-radius: 2.5rem;
 }
 
@@ -338,7 +324,7 @@ section {
 
 .form-subtitle {
   text-align: center;
-  color: #F5F1DE;
+  color: #400C01;
   margin-bottom: 2rem;
 }
 
@@ -352,46 +338,46 @@ section {
   left: 1.25rem;
   top: 50%;
   transform: translateY(-50%);
-  color: #F5F1DE;
+  color: #400C01;
   font-weight: 500;
 }
 
 .phone-input {
   width: 100%;
   padding: 1.25rem 1.25rem 1.25rem 5rem;
-  background: #400C01;
-  border: 1px solid #F5F1DE;
+  background: #F5F1DE;
+  border: 1px solid #400C01;
   border-radius: 1rem;
   font-size: 1.125rem;
-  color: #F5F1DE;
+  color: #400C01;
   transition: all 0.3s;
 }
 
 .phone-input:focus {
   outline: none;
-  border-color: #F5F1DE;
+  border-color: #400C01;
 }
 
 .phone-input::placeholder {
-  color: #F5F1DE;
+  color: #400C01;
 }
 
 .submit-button {
   width: 100%;
   padding: 1.25rem;
-  background: #400C01;
-  border: 1px solid #F5F1DE;
+  background: #F5F1DE;
+  border: 1px solid #400C01;
   border-radius: 1rem;
   font-size: 1.125rem;
   font-weight: 600;
-  color: #F5F1DE;
+  color: #400C01;
   cursor: pointer;
   transition: all 0.3s;
 }
 
 .submit-button:hover:not(:disabled) {
-  background: #400C01;
-  border-color: #F5F1DE;
+  background: #F5F1DE;
+  border-color: #400C01;
 }
 
 .submit-button:disabled {
@@ -421,7 +407,7 @@ section {
 .privacy-box {
   margin-top: 2rem;
   padding-top: 1.5rem;
-  border-top: 1px solid #F5F1DE;
+  border-top: 1px solid #400C01;
 }
 
 .privacy-content {
@@ -429,13 +415,13 @@ section {
   align-items: flex-start;
   gap: 0.75rem;
   font-size: 0.75rem;
-  color: #F5F1DE;
+  color: #400C01;
 }
 
 .privacy-icon {
   width: 1.25rem;
   height: 1.25rem;
-  color: #F5F1DE;
+  color: #400C01;
   flex-shrink: 0;
   margin-top: 0.125rem;
 }
