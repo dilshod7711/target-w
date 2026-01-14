@@ -251,9 +251,15 @@
         transition: var(--transition);
         font-size: 20px;
         color: var(--accent);
+        animation: arrowBounce 2s ease-in-out infinite;
       }
       .faq-item.active .faq-icon {
-        transform: rotate(45deg);
+        transform: rotate(180deg);
+        animation: none;
+      }
+      @keyframes arrowBounce {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(5px); }
       }
 
       /* Bonus Section (Rasm bo'yicha qora blok ichida) */
@@ -785,21 +791,6 @@
         </button>
       </header>
 
-      <section class="story-container reveal">
-        <h2>Nega bunday bo'ldi?</h2>
-        <div class="story-text">
-          <p>
-            "Тонгда соат бешларда уйғониб кетдим. Ёнимда эримни нафас олишини
-            эшитябман. Илгари бу овоз хурсандчилик олиб келарди, ҳозир фақат
-            алам..."
-          </p>
-          <br />
-          <p>
-            "Мана 10 йил бирга ўтдик, лекин орамизда катта жарлик пайдо
-            бўлгандек. Биз энди фақат бир том остидаги қўшниларга айландик."
-          </p>
-        </div>
-      </section>
       <h2 class="section-header reveal">Biz nima qilamiz?</h2>
       <div class="steps-grid">
         <div class="step-item reveal">
@@ -839,6 +830,22 @@
         </div>
       </div>
 
+      <section class="story-container reveal" style="margin-top: 60px">
+        <h2>Nega bunday bo'ldi?</h2>
+        <div class="story-text">
+          <p>
+            "Тонгда соат бешларда уйғониб кетдим. Ёнимда эримни нафас олишини
+            эшитябман. Илгари бу овоз хурсандчилик олиб келарди, ҳозир фақат
+            алам..."
+          </p>
+          <br />
+          <p>
+            "Мана 10 йил бирга ўтдик, лекин орамизда катта жарлик пайдо
+            бўлгандек. Биз энди фақат бир том остидаги қўшниларга айландик."
+          </p>
+        </div>
+      </section>
+
       <h2 class="section-header reveal" style="margin-top: 60px">
         Ko'p so'raladigan savollar
       </h2>
@@ -846,7 +853,7 @@
         <div class="faq-item">
           <div class="faq-header" onclick="toggleFaq(this)">
             <h4>Konsultatsiya qancha vaqt davom etadi?</h4>
-            <span class="faq-icon">+</span>
+            <span class="faq-icon">↓</span>
           </div>
           <div class="faq-body">
             <p>
@@ -859,7 +866,7 @@
         <div class="faq-item">
           <div class="faq-header" onclick="toggleFaq(this)">
             <h4>Natija bo'lishiga kafolat bormi?</h4>
-            <span class="faq-icon">+</span>
+            <span class="faq-icon">↓</span>
           </div>
           <div class="faq-body">
             <p>
